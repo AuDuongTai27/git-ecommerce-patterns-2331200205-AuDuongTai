@@ -21,13 +21,13 @@ console.log("\n");
 
 
 // --- Part 2B: Factory Pattern ---
-// console.log("--- 2B: Factory Pattern ---");
-// const factory = new ProductFactory();
-// const book = factory.createProduct('book', { title: 'The Pragmatic Programmer', price: 35 });
-// const laptop = factory.createProduct('electronic', { model: 'XPS 15', price: 1500 });
-// book.describe();
-// laptop.describe();
-// console.log("\n");
+console.log("--- 2B: Factory Pattern ---");
+const factory = new ProductFactory();
+const book = factory.createProduct('book', { title: 'The Pragmatic Programmer', price: 35 });
+const laptop = factory.createProduct('electronic', { model: 'XPS 15', price: 1500 });
+book.describe();
+laptop.describe();
+console.log("\n");
 
 
 // --- Part 3A: Decorator Pattern ---

@@ -43,11 +43,11 @@ console.log("\n");
 
 
 // --- Part 3B: Facade Pattern ---
-// console.log("--- 3B: Facade Pattern ---");
-// const checkout = new CheckoutFacade();
-// const orderDetails = { userId: 'user-123', productIds: [1, 3], shippingInfo: '123 Main St' };
-// checkout.placeOrder(orderDetails);
-// console.log("\n");
+console.log("--- 3B: Facade Pattern ---");
+const checkout = new CheckoutFacade();
+const orderDetails = { userId: 'user-123', productIds: [1, 3], shippingInfo: '123 Main St' };
+checkout.placeOrder(orderDetails);
+console.log("\n");
 
 
 // --- Part 4A: Strategy Pattern ---

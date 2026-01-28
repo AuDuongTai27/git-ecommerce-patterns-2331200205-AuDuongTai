@@ -66,17 +66,17 @@ console.log("\n");
 
 
 // --- Part 4B: Command Pattern ---
-// console.log("--- 4B: Command Pattern ---");
-// const invoker = new CommandInvoker();
-// const cart = new CartService();
-// const newLaptop = factory.createProduct('electronic', { model: 'MacBook Pro', price: 2500 });
-// const command = new AddToCartCommand(cart, newLaptop);
-// console.log("Initial Cart:", cart.getProducts());
-// invoker.executeCommand(command);
-// console.log("Cart after executing command:", cart.getProducts());
-// invoker.undoLastCommand();
-// console.log("Cart after undoing command:", cart.getProducts());
-// console.log("\n");
+console.log("--- 4B: Command Pattern ---");
+const invoker = new CommandInvoker();
+const cart = new CartService();
+const newLaptop = factory.createProduct('electronic', { model: 'MacBook Pro', price: 2500 });
+const command = new AddToCartCommand(cart, newLaptop);
+console.log("Initial Cart:", cart.getProducts());
+invoker.executeCommand(command);
+console.log("Cart after executing command:", cart.getProducts());
+invoker.undoLastCommand();
+console.log("Cart after undoing command:", cart.getProducts());
+console.log("\n");
 
 
 // --- Part 4C: Observer Pattern ---

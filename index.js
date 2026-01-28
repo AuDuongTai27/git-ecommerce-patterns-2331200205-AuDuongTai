@@ -80,14 +80,14 @@ console.log("\n");
 
 
 // --- Part 4C: Observer Pattern ---
-// console.log("--- 4C: Observer Pattern ---");
-// const orderTracker = new OrderTracker('order-456');
-// const emailNotifier = new EmailNotifier();
-// const dashboardNotifier = new DashboardNotifier();
-// orderTracker.addObserver(emailNotifier);
-// orderTracker.addObserver(dashboardNotifier);
-// orderTracker.updateStatus('Processing');
-// console.log("---");
-// orderTracker.removeObserver(emailNotifier);
-// orderTracker.updateStatus('Shipped');
-// console.log("\n");
+console.log("--- 4C: Observer Pattern ---");
+const orderTracker = new OrderTracker('order-456');
+const emailNotifier = new EmailNotifier();
+const dashboardNotifier = new DashboardNotifier();
+orderTracker.addObserver(emailNotifier);
+orderTracker.addObserver(dashboardNotifier);
+orderTracker.updateStatus('Processing');
+console.log("---");
+orderTracker.removeObserver(emailNotifier);
+orderTracker.updateStatus('Shipped');
+console.log("\n");

@@ -1,0 +1,12 @@
+{
+  "name": "design-patterns-assignment",
+  "version": "1.0.0",
+  "description": "An assignment for implementing common software design patterns.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

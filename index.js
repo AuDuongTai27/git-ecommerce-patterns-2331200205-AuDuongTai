@@ -51,18 +51,18 @@ console.log("\n");
 
 
 // --- Part 4A: Strategy Pattern ---
-// console.log("--- 4A: Strategy Pattern ---");
-// const packageDetails = { weight: 2.5, dimensions: { width: 10, height: 8, depth: 3 } };
-// const calculator = new ShippingCalculator();
-// // Calculate with flat rate
-// calculator.setStrategy(new FlatRateStrategy());
-// const flatRateCost = calculator.calculate(packageDetails);
-// console.log(`Flat Rate Shipping Cost: $${flatRateCost}`);
-// // Calculate with weight-based rate
-// calculator.setStrategy(new WeightBasedStrategy());
-// const weightBasedCost = calculator.calculate(packageDetails);
-// console.log(`Weight-Based Shipping Cost: $${weightBasedCost}`);
-// console.log("\n");
+console.log("--- 4A: Strategy Pattern ---");
+const packageDetails = { weight: 2.5, dimensions: { width: 10, height: 8, depth: 3 } };
+const calculator = new ShippingCalculator();
+// Calculate with flat rate
+calculator.setStrategy(new FlatRateStrategy());
+const flatRateCost = calculator.calculate(packageDetails);
+console.log(`Flat Rate Shipping Cost: $${flatRateCost}`);
+// Calculate with weight-based rate
+calculator.setStrategy(new WeightBasedStrategy());
+const weightBasedCost = calculator.calculate(packageDetails);
+console.log(`Weight-Based Shipping Cost: $${weightBasedCost}`);
+console.log("\n");
 
 
 // --- Part 4B: Command Pattern ---
